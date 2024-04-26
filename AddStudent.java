@@ -5,8 +5,8 @@ import java.util.*;
 
 public class AddStudent extends JFrame {
 
-    JTextField tfname, tffname, tfdob, tfaddress, tfphone, tfemail, tfsscgpa, tfhscgpa;
-    JLabel lablelrollno, lbladdress, lblphone, lblemail, lblsscgpa, lblhscgpa;
+    JTextField tfname, tffname, tfdob, tfaddress, tfphone, tfemail, tfsscgpa, tfhscgpa, tfnid;
+    JLabel lablelrollno, lbladdress, lblphone, lblemail, lblsscgpa, lblhscgpa, lblnid;
 
     Random ran = new Random();// For Generating random Number
     long first4 = Math.abs(ran.nextLong() % 9000L) + 1000L; // Generates a number between 1000 and 9999
@@ -87,7 +87,7 @@ public class AddStudent extends JFrame {
         add(tfemail);
 
         JLabel lblsscgpa = new JLabel("SSC GPA:");
-        lblsscgpa.setBounds(400, 300, 200, 30);
+        lblsscgpa.setBounds(50, 350, 200, 30);
         lblsscgpa.setFont(new Font("Arial", Font.BOLD, 20));
         add(lblsscgpa);
 
@@ -103,6 +103,15 @@ public class AddStudent extends JFrame {
         tfhscgpa = new JTextField();
         tfhscgpa.setBounds(600, 350, 150, 30);
         add(tfhscgpa);
+
+        JLabel lblnid = new JLabel("NID No:");
+        lblnid.setBounds(400, 300, 200, 30);
+        lblnid.setFont(new Font("Arial", Font.BOLD, 20));
+        add(lblnid);
+
+        tfnid = new JTextField();
+        tfnid.setBounds(200, 350, 150, 30);
+        add(tfnid);
 
         setVisible(true);
     }
