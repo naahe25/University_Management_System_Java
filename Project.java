@@ -25,10 +25,12 @@ public class Project extends JFrame implements ActionListener {
 
         JMenuItem facultyInfo = new JMenuItem("New Faculty Information");
         facultyInfo.setBackground(Color.WHITE);
+        facultyInfo.addActionListener(this);
         newInformation.add(facultyInfo);
 
         JMenuItem studentInfo = new JMenuItem("New Student Information");
         studentInfo.setBackground(Color.WHITE);
+        studentInfo.addActionListener(this);
         newInformation.add(studentInfo);
 
         // Details Show
@@ -169,6 +171,10 @@ public class Project extends JFrame implements ActionListener {
             } catch (Exception e) {
 
             }
+        } else if (msg.equals("New Faculty Information")) {
+            new AddTeacher();
+        } else if (msg.equals("New Student Information")) {
+            new AddStudent();
         }
     }
 
