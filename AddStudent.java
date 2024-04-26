@@ -5,8 +5,8 @@ import java.util.*;
 
 public class AddStudent extends JFrame {
 
-    JTextField tfname, tffname, tfdob, tfaddress, tfphone, tfemail, tfsscgpa, tfhscgpa, tfnid;
-    JLabel lablelrollno, lbladdress, lblphone, lblemail, lblsscgpa, lblhscgpa, lblnid;
+    JTextField tfname, tffname, tfdob, tfaddress, tfphone, tfemail, tfsscgpa, tfhscgpa, tfnid, tfcourse;
+    JLabel lablelrollno, lbladdress, lblphone, lblemail, lblsscgpa, lblhscgpa, lblnid, lblcourse;
 
     Random ran = new Random();// For Generating random Number
     long first4 = Math.abs(ran.nextLong() % 9000L) + 1000L; // Generates a number between 1000 and 9999
@@ -112,6 +112,17 @@ public class AddStudent extends JFrame {
         tfnid = new JTextField();
         tfnid.setBounds(200, 350, 150, 30);
         add(tfnid);
+
+
+        JLabel lblcourse = new JLabel("Courses:");
+        lblcourse.setBounds(400, 400, 200, 30);
+        lblcourse.setFont(new Font("Arial", Font.BOLD, 20));
+        add(lblcourse);
+
+        tfcourse = new JTextField();
+        tfcourse.setBounds(600, 400, 150, 30);
+        add(tfcourse);
+
 
         setVisible(true);
     }
