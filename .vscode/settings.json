@@ -1,7 +1,9 @@
 {
   "java.project.referencedLibraries": [
     "lib/**/*.jar",
-    "Jar Files(Add To Referance Library)/mysql-connector-java-8.0.28.jar"
+    "Jar Files(Add To Referance Library)/mysql-connector-java-8.0.28.jar",
+    "Jar Files(Add To Referance Library)/rs2xml.jar",
+    "Jar Files(Add To Referance Library)/jcalendar-tz-1.3.3-4.jar"
   ],
   "workbench.activityBar.location": "default",
   "workbench.view.alwaysShowHeaderActions": false
