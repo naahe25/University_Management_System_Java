@@ -1,6 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
 import java.sql.*;
+// Ensure you have the rs2xml.jar library added to your project dependencies
 import net.proteanit.sql.DbUtils;
 import java.awt.event.*;
 
