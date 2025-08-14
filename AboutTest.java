@@ -1,3 +1,4 @@
+// --- Standard Assert Test ---
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import javax.swing.*;
@@ -7,7 +8,6 @@ public class AboutTest {
     void testWindowComponents() {
         About about = new About();
         assertTrue(about.isVisible());
-        // Check some label exists
         boolean found = false;
         for (java.awt.Component comp : about.getContentPane().getComponents()) {
             if (comp instanceof JLabel) {
