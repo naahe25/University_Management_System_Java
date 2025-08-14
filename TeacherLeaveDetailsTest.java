@@ -1,24 +1,14 @@
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
+// --- Standard Assert Test ---
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
+import java.sql.*;
 
-class TeacherLeaveDetailsTest {
-
-    @BeforeEach
-    void setUp() {
-    }
-
-    @AfterEach
-    void tearDown() {
-    }
-
+public class TeacherLeaveDetailsTest {
     @Test
-    void actionPerformed() {
-    }
-
-    @Test
-    void main() {
+    void testTeacherLeaveDetailsPresent() throws Exception {
+        Conn c = new Conn();
+        String empId = "921-3333";
+        ResultSet rs = c.s.executeQuery("SELECT * FROM teacherleave WHERE emp_id='" + empId + "'");
+        assertTrue(rs.next(), "Teacher leave details for " + empId + " should exist");
     }
 }
