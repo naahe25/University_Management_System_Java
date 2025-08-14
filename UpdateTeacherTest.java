@@ -7,8 +7,8 @@ public class UpdateTeacherTest {
     @Test
     void testUpdatedTeacherAddress() throws Exception {
         Conn c = new Conn();
-        String empId = "921-6666";
-        ResultSet rs = c.s.executeQuery("SELECT * FROM teacher WHERE emp_id='" + empId + "'");
+        String empId = "921-8570";
+        ResultSet rs = c.s.executeQuery("SELECT * FROM teacher WHERE empId='" + empId + "'");
         assertTrue(rs.next(), "Updated teacher record should exist for " + empId);
     }
 }

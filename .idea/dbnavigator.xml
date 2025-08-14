@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
@@ -35,6 +35,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="1e8466ae-c963-4807-903c-d8e4af67b291" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/universitymanagementsystem.sql" connection-id="1e8466ae-c963-4807-903c-d8e4af67b291" session-id="MAIN" current-schema="mysql" />

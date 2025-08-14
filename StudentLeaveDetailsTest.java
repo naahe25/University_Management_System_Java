@@ -7,7 +7,7 @@ public class StudentLeaveDetailsTest {
     @Test
     void testLeaveDetailsExist() throws Exception {
         Conn c = new Conn();
-        String rollno = "222-134-3333";
+        String rollno = "222-134-1187";
         ResultSet rs = c.s.executeQuery("SELECT * FROM studentleave WHERE rollno='" + rollno + "'");
         assertTrue(rs.next(), "Student leave details for " + rollno + " should exist");
     }

@@ -23,6 +23,10 @@ create table marks(rollno varchar(20), semester varchar(20), marks1 varchar(50),
 
 create table fee(course varchar(20), semester1 varchar(20), semester2 varchar(20), semester3 varchar(20), semester4 varchar(20), semester5 varchar(20), semester6 varchar(20), semester7 varchar(20), semester8 varchar(20));
 
+create table examination (exam_id VARCHAR(20),exam_name VARCHAR(50),course VARCHAR(40),date VARCHAR(20));
+
+
+
 insert into fee values("BSC Sofware Engineering", "48000", "43000","44000","47000","48000","45000","47000","44000");
 
 insert into fee values("CSE", "45000", "44000","46000","42000","42000","44000","45000","47000");
@@ -38,6 +42,9 @@ insert into fee values("English(Hons)", "48000", "43000","43000","43000","43000"
 insert into fee values("MSC Software Engineering", "48000", "43000","43000","43000","43000","43000","43000","43000");
 
 insert into fee values("EEE", "48000", "43000","43000","43000","43000","43000","43000","43000");
+
+INSERT INTO examination VALUES('JUNIT-EXAM','Midterm','CSE','2025-09-01');
+
 
 
 

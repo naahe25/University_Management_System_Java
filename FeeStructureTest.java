@@ -7,9 +7,9 @@ public class FeeStructureTest {
     @Test
     void testFeeStructurePresent() throws Exception {
         Conn c = new Conn();
-        String course = "CS";
-        String year = "2022";
-        ResultSet rs = c.s.executeQuery("SELECT * FROM fee WHERE course='" + course + "' AND year='" + year + "'");
-        assertTrue(rs.next(), "Fee structure for " + course + " " + year + " should exist");
+        String course = "CSE"; // example course from your database
+        ResultSet rs = c.s.executeQuery("SELECT * FROM fee WHERE course='" + course + "'");
+        assertTrue(rs.next(), "Fee structure for course " + course + " should exist");
     }
 }
+

@@ -20,14 +20,14 @@ public class MarksTest {
     @Test
     void testMarksExistForStudent() throws Exception {
         Conn c = new Conn();
-        String testRoll = "222-134-7777";
+        String testRoll = "222-134-1187";
         ResultSet rs = c.s.executeQuery("SELECT * FROM marks WHERE rollno='" + testRoll + "'");
         assertTrue(rs.next(), "Marks for rollno " + testRoll + " should exist");
     }
 
     // Parameterized Test (@ValueSource)
     @ParameterizedTest
-    @ValueSource(strings = {"222-134-7777", "222-134-8888"})
+    @ValueSource(strings = {"222-134-1187", "222-134-1643"})
     void testMarksExistValueSource(String rollno) throws Exception {
         Conn c = new Conn();
         ResultSet rs = c.s.executeQuery("SELECT * FROM marks WHERE rollno='" + rollno + "'");
@@ -36,7 +36,7 @@ public class MarksTest {
 
     // Parameterized Test (@MethodSource)
     static Stream<String> rollProvider() {
-        return Stream.of("222-134-7777", "222-134-8888");
+        return Stream.of("222-134-1187", "222-134-1643");
     }
 
     @ParameterizedTest

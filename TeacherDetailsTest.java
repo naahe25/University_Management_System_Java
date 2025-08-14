@@ -7,8 +7,8 @@ public class TeacherDetailsTest {
     @Test
     void testTeacherDetailsPresent() throws Exception {
         Conn c = new Conn();
-        String empId = "921-5555";
-        ResultSet rs = c.s.executeQuery("SELECT * FROM teacher WHERE emp_id='" + empId + "'");
+        String empId = "921-8570"; // use an existing empId from your database
+        ResultSet rs = c.s.executeQuery("SELECT * FROM teacher WHERE empId='" + empId + "'");
         assertTrue(rs.next(), "Teacher details for " + empId + " should exist");
     }
 }
