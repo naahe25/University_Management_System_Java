@@ -3,6 +3,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.sql.*;
 import net.proteanit.sql.DbUtils;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import java.awt.event.*;
 
 public class StudentLeaveDetails extends JFrame implements ActionListener {
@@ -91,5 +95,24 @@ public class StudentLeaveDetails extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         new StudentLeaveDetails();
+    }
+
+    static class StudentLeaveTest {
+
+        @BeforeEach
+        void setUp() {
+        }
+
+        @AfterEach
+        void tearDown() {
+        }
+
+        @Test
+        void actionPerformed() {
+        }
+
+        @Test
+        void main() {
+        }
     }
 }
