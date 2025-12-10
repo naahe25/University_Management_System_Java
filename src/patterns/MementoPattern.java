@@ -1,8 +1,7 @@
 package patterns;
 
-/**
- * Memento Pattern: StudentProfile can save and restore its state using Mementos.
- */
+// Demonstrates saving and restoring a small object's state. I kept the
+// Memento as a simple immutable holder  that's the usual approach.
 public class MementoPattern {
 
     public static class StudentProfile {

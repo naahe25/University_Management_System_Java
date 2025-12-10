@@ -1,5 +1,8 @@
 package patterns;
 
+// Simple POJO for demo purposes. Nothing fancy  just id, name and an email.
+// I kept this minimal so the pattern examples focus on the patterns
+// themselves without pulling in other project code.
 public class Student {
     private final int id;
     private String name;

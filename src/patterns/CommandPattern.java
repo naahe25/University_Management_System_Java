@@ -3,9 +3,8 @@ package patterns;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Command Pattern: Encapsulate registry operations as commands (add/remove).
- */
+// Command pattern example: encapsulate add/remove operations so they can be
+// executed and undone. The invoker keeps a tiny history for undo.
 public class CommandPattern {
 
     public interface Command {

@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Singleton Pattern: RegistrySingleton is an application-wide single instance that keeps students.
- */
+// RegistrySingleton: a single place to hold students in the demo.
+// It's intentionally simple  thread-safe lazy init and a few helper methods.
 public class SingletonPattern {
 
     public static class RegistrySingleton {

@@ -3,9 +3,8 @@ package patterns;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Observer Pattern: CourseSubject notifies student observers about announcements.
- */
+// Simple observer example: a course broadcasts announcements to students.
+// The observer implementation is intentionally small so it's easy to follow.
 public class ObserverPattern {
 
     public interface Observer {
@@ -26,7 +25,7 @@ public class ObserverPattern {
         }
     }
 
-    // A StudentObserver implementation
+    // A tiny observer that prints announcements addressed to a student.
     public static class StudentObserver implements Observer {
         private final Student student;
         public StudentObserver(Student student) { this.student = student; }

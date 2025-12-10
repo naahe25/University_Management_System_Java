@@ -3,9 +3,8 @@ package patterns;
 import java.util.Comparator;
 import java.util.List;
 
-/**
- * Strategy Pattern: provide interchangeable sorting strategies for students.
- */
+// Strategy demo: swapping sorting algorithms at runtime. Kept short
+// so it's obvious how to add more strategies if needed.
 public class StrategyPattern {
 
     public interface SortingStrategy {

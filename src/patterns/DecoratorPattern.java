@@ -1,8 +1,7 @@
 package patterns;
 
-/**
- * Decorator Pattern: Notifier interface with decorators (Email and SMS).
- */
+// Decorator example: basic notifier that can be wrapped to add channels
+// like email or SMS. Kept minimal so it's easy to reuse in real code.
 public class DecoratorPattern {
 
     public interface Notifier {

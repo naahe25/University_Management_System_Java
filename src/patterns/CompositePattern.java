@@ -3,9 +3,8 @@ package patterns;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Composite Pattern: OrganizationComponent composite structure for departments and employees.
- */
+// Composite demonstration: departments can contain employees or other
+// components. I used Student as a lightweight data holder for employees.
 public class CompositePattern {
 
     public static abstract class OrganizationComponent {

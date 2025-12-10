@@ -1,8 +1,7 @@
 package patterns;
 
-/**
- * Facade Pattern: UniversityFacade hides several subsystems (Admission, Finance, Library) behind a simple API.
- */
+// A small facade that shows how multiple subsystems can be hidden behind
+// a single, easy-to-use method. This keeps the demo readable.
 public class FacadePattern {
 
     public static class UniversityFacade {
@@ -18,7 +17,7 @@ public class FacadePattern {
         }
     }
 
-    // Subsystems
+    // Tiny subsystem stubs to keep the example focused.
     private static class AdmissionSystem {
         void register(Student s) { System.out.println("Admission: Registered " + s.getName()); }
     }

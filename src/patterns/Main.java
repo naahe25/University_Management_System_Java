@@ -3,9 +3,8 @@ package patterns;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Main runner to demonstrate all 10 patterns in action.
- */
+// Small runner that walks through each design pattern demo so you can see
+// how they behave. Run this if you want a quick smoke test.
 public class Main {
     public static void main(String[] args) {
         System.out.println("=== Factory Pattern Demo ===");

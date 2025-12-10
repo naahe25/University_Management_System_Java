@@ -1,8 +1,8 @@
 package patterns;
 
-/**
- * Simple Factory Pattern: StudentFactory creates Student instances by type.
- */
+// Small factory used in the demos to create different kinds of students.
+// I kept the concrete classes private and tiny  they only exist so the
+// factory example is clear and self-contained.
 public class FactoryPattern {
 
     public enum StudentLevel { UNDERGRAD, GRAD }
@@ -18,7 +18,7 @@ public class FactoryPattern {
         }
     }
 
-    // Concrete student types
+    // Very small concrete types just to show the idea.
     private static class UndergraduateStudent extends Student {
         public UndergraduateStudent(int id, String name) { super(id, name); }
         @Override public String toString() { return "Undergrad" + super.toString(); }
