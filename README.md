@@ -14,6 +14,7 @@ A comprehensive Java-based desktop application for managing university operation
 - [Technologies Used](#technologies-used)
 - [Default Credentials](#default-credentials)
 - [File Structure](#file-structure)
+- [Screenshots](#screenshots)
 
 ## ✨ Features
 
@@ -43,10 +44,58 @@ A comprehensive Java-based desktop application for managing university operation
 - **Notepad**: Text editor utility
 - **About Section**: Application information
 
-# Screenshots
+## 📸 Screenshots
 
+### 1. Login Screen
+![Login Screen](screenshots/login.png)
 
+### 2. Start/Splash Screen
+![Start Screen](screenshots/start_screen.png)
 
+### 3. Add New Student
+![Add New Student](screenshots/new_student_details_add.png)
+
+### 4. Student Details
+![Student Details](screenshots/Student_details.png)
+
+### 5. Update Student Details
+![Update Student Details](screenshots/Student_Details_Update.png)
+
+### 6. Student Apply Leave
+![Student Apply Leave](screenshots/Student_Apply_Leave.png)
+
+### 7. Student Leave Details
+![Student Leave Details](screenshots/Student_Leave_Details.png)
+
+### 8. Add New Teacher/Faculty
+![Add New Teacher](screenshots/new_teacher_details_add.png)
+
+### 9. Employee/Faculty Details
+![Employee Details](screenshots/Employee_Details.png)
+
+### 10. Update Teacher Details
+![Update Teacher Details](screenshots/Teacher_Details_Update.png)
+
+### 11. Teacher Apply Leave
+![Teacher Apply Leave](screenshots/Teacher_Apply_Leave.png)
+
+### 12. Faculty Leave Details
+![Faculty Leave Details](screenshots/Faculty_Leave_Details.png)
+
+### 13. Marks Entry & Updating Page
+![Marks Entry](screenshots/Marks_Entry&Updating_Page.png)
+
+### 14. Check Results
+![Check Results](screenshots/Check_Results.png)
+
+### 15. Display Result Of Student
+![Display Result](screenshots/Display_Result_Of_Student.png)
+
+### 16. University Course Fee Structure
+![Fee Structure](screenshots/University_Course_Fee_Structure.png)
+
+### 17. About Section
+![About](screenshots/About.png)
 
 ## 📁 Project Structure
 
