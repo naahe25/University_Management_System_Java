@@ -43,6 +43,11 @@ A comprehensive Java-based desktop application for managing university operation
 - **Notepad**: Text editor utility
 - **About Section**: Application information
 
+# Screenshots
+
+
+
+
 ## 📁 Project Structure
 
 ```
